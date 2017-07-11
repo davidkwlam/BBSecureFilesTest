@@ -16,5 +16,6 @@ echo "First line $filename: $line"
 
 if [ "$line" != "this is my secret file!" ]
 then
+  echo "First line is wrong!"
   exit 1
 fi
