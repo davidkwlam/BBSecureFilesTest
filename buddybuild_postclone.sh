@@ -9,3 +9,7 @@ else
   echo "$filename not found."
   exit 1
 fi
+
+line=$(head -n 1 $filename)
+
+echo $line
