@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-echo $BUDDYBUILD_SECURE_FILES
+filename=$BUDDYBUILD_SECURE_FILES/super_secret_file.txt
+
+echo $filename
