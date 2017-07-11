@@ -14,7 +14,7 @@ line=$(head -n 1 $filename)
 
 echo "First line $filename: $line"
 
-if [ $line != "this is my secret file!" ]
+if [ "$line" != "this is my secret file!" ]
 then
   exit 1
 fi
