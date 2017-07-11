@@ -12,4 +12,9 @@ fi
 
 line=$(head -n 1 $filename)
 
-echo $line
+echo "First line $filename: $line"
+
+if [ $line -ne "this is my secret file!" ]
+then
+  exit 1
+fi
